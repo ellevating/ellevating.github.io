@@ -1,0 +1,222 @@
+/* Global Styles */
+:root {
+    --spotify-black: #121212;
+    --spotify-dark-gray: #181818;
+    --robinhood-green: #00C805;
+    --tropical-blue: #00B4D8;
+    --tropical-orange: #FF9E00;
+    --tropical-teal: #0077B6;
+    --text-light: #FFFFFF;
+    --text-muted: #B3B3B3;
+    --card-bg: #282828;
+    --hover-bg: #383838;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-light);
+    line-height: 1.6;
+    background-color: var(--spotify-black);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: var(--spotify-dark-gray) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)),
+                url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+/* About Section */
+#about {
+    background-color: var(--spotify-dark-gray);
+    color: var(--text-light);
+}
+
+.product-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
+}
+
+.product-item:hover {
+    background-color: var(--hover-bg);
+}
+
+.product-item h4 {
+    color: var(--robinhood-green);
+    margin-bottom: 0.5rem;
+}
+
+/* News Section */
+#news {
+    background-color: var(--spotify-black);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: var(--card-bg);
+    color: var(--text-light);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: var(--hover-bg);
+}
+
+.card-title {
+    color: var(--tropical-blue);
+}
+
+/* Blog Section */
+#blog {
+    background-color: var(--spotify-dark-gray);
+}
+
+.blog-post {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: var(--text-light);
+    transition: background-color 0.3s ease;
+}
+
+.blog-post:hover {
+    background-color: var(--hover-bg);
+}
+
+.blog-post h3 {
+    color: var(--tropical-orange);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--spotify-dark-gray);
+}
+
+footer a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--tropical-blue);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--robinhood-green);
+    border-color: var(--robinhood-green);
+    color: var(--spotify-black);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--tropical-teal);
+    border-color: var(--tropical-teal);
+    transform: translateY(-2px);
+    color: var(--text-light);
+}
+
+.btn-outline-primary {
+    color: var(--tropical-blue);
+    border-color: var(--tropical-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--tropical-blue);
+    border-color: var(--tropical-blue);
+    color: var(--text-light);
+}
+
+/* Text Colors */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Links */
+a {
+    color: var(--tropical-blue);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--tropical-orange);
+}
+
+/* Categories in Blog */
+.card-body ul li a {
+    color: var(--text-light);
+}
+
+.card-body ul li a:hover {
+    color: var(--tropical-orange);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
