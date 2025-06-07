@@ -63,6 +63,17 @@ body {
     color: var(--text-light);
 }
 
+.hero-subheading {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+}
+
+.hero-subheading div {
+    margin-bottom: 0.2rem;
+}
+
 /* About Section */
 #about {
     background-color: var(--spotify-dark-gray);
