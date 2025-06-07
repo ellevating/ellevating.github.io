@@ -244,29 +244,36 @@ a:hover {
     color: var(--text-light);
     border-top: 4px solid var(--tropical-orange);
     border-bottom: 2px solid var(--tropical-blue);
+    padding-bottom: 3.5rem !important;
 }
 .problem-heading {
     font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--tropical-orange);
+    font-weight: 900;
+    color: var(--tropical-orange) !important;
+    letter-spacing: 0.01em;
 }
 .problem-intro {
     font-size: 1.3rem;
     font-weight: 500;
 }
 .problem-meeting {
-    background: rgba(0,0,0,0.25);
-    border-radius: 12px;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: rgba(40,180,216,0.13); /* more visible blue tint */
+    border: 1.5px solid var(--tropical-blue);
+    border-radius: 14px;
+    padding: 1.7rem 1.2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
 }
 .problem-list li {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     line-height: 1.4;
 }
+.problem-list strong {
+    color: var(--tropical-orange);
+    font-weight: 700;
+}
 .problem-summary {
     font-size: 1.15rem;
     font-weight: 400;
-    margin-top: 1.5rem;
+    margin-top: 2.2rem;
 } 
