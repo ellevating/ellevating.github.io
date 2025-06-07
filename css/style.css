@@ -244,7 +244,7 @@ a:hover {
     color: var(--text-light);
     border-top: 4px solid var(--tropical-orange);
     border-bottom: 2px solid var(--tropical-blue);
-    padding-bottom: 3.5rem !important;
+    padding-bottom: 6rem !important;
 }
 .problem-heading {
     font-size: 2.2rem;
