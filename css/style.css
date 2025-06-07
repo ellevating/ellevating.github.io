@@ -237,4 +237,36 @@ a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.problem-section {
+    background: linear-gradient(90deg, var(--spotify-dark-gray) 60%, var(--card-bg) 100%);
+    color: var(--text-light);
+    border-top: 4px solid var(--tropical-orange);
+    border-bottom: 2px solid var(--tropical-blue);
+}
+.problem-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--tropical-orange);
+}
+.problem-intro {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.problem-meeting {
+    background: rgba(0,0,0,0.25);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.problem-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+.problem-summary {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
 } 
