@@ -10,8 +10,15 @@
     --text-muted: #B3B3B3;
     --card-bg: #282828;
     --hover-bg: #383838;
+    --navbar-height: 76px; /* Height of the navbar */
 }
-
+/* Section Padding */
+section {
+    padding-top: var(--navbar-height);
+    margin-top: calc(-1 * var(--navbar-height));
+    scroll-margin-top: var(--navbar-height);
+}
+ 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-light);
