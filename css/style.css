@@ -74,6 +74,13 @@ body {
     margin-bottom: 0.2rem;
 }
 
+.hero-cta-desc {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--robinhood-green);
+    margin-bottom: 0.7rem;
+}
+
 /* About Section */
 #about {
     background-color: var(--spotify-dark-gray);
