@@ -104,6 +104,27 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.product-item a {
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
+}
+
+.product-item a:hover {
+    background-color: var(--hover-bg);
+}
+
+.product-item a .card-text {
+    color: var(--tropical-blue);
+    transition: color 0.3s ease;
+}
+
+.product-item a:hover .card-text {
+    color: var(--tropical-orange);
+}
+
 /* News Section */
 #news {
     background-color: var(--spotify-black);
