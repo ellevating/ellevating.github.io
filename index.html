@@ -55,7 +55,7 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12 text-center">
-                    <video src="images/team.mp4" class="d-block mx-auto mb-3" style="max-width: 320px; width: 100%; height: auto; background: transparent;" autoplay muted playsinline preload="auto" onended="this.pause(); this.currentTime=this.duration-0.1;" poster="images/ellevating-logo-v1.png"></video>
+                    <video src="images/team.mp4" class="d-block mx-auto mb-3" style="max-width: 320px; width: 100%; height: auto; background: transparent;" autoplay muted playsinline preload="auto" poster="images/ellevating-logo-v1.png" id="hero-video"></video>
                     <p class="lead text-white mb-2">Find your way, Build your life, Leave your mark</p>
                     <h1 class="display-6 text-white mb-4 fw-normal" style="font-size: 1.8rem;">They rise, together</h1>
                     <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
@@ -227,5 +227,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+    <script>
+  const video = document.getElementById('hero-video');
+  if (video) {
+    video.onended = function() {
+      video.pause();
+      video.currentTime = video.duration - 0.1;
+    };
+  }
+</script>
 </body>
 </html> 
