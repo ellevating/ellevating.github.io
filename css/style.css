@@ -369,7 +369,7 @@ a:hover {
     background: #000;
 }
 .hero-cta-section {
-    background: var(--spotify-black);
+    background: rgb(32, 32, 32);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     text-align: center;
