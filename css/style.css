@@ -369,7 +369,7 @@ a:hover {
     background: #000;
 }
 .hero-cta-section {
-    background: rgb(32, 32, 32);
+    background: var(--card-bg);
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     text-align: center;
@@ -389,4 +389,8 @@ a:hover {
     .hero-cta-section {
         margin-top: 0.5rem;
     }
+} 
+.hero-cta-section,
+#about {
+    background: var(--card-bg) !important;
 } 
