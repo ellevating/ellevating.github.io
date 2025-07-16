@@ -24,6 +24,10 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     background-color: var(--spotify-black);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -345,16 +349,18 @@ a:hover {
 } 
 .hero-video-section {
     width: 100vw;
+    min-height: 40vw;
+    max-height: 60vh;
     overflow: hidden;
     background: #000;
     position: relative;
     margin-bottom: 0;
-    z-index: 1;
 }
 .hero-video-section video {
     width: 100vw;
     height: 50vw;
     max-height: 60vh;
+    min-height: 300px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
