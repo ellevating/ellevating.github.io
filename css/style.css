@@ -409,7 +409,7 @@ a:hover {
     opacity: 1;
 }
 .hero-cta-section {
-    background: rgb(31, 31, 31);
+    background: rgb(31, 31, 31) !important;
     padding-top: 3rem;
     padding-bottom: 2.5rem;
     text-align: center;
