@@ -52,13 +52,15 @@
 
     <!-- Hero Video Section -->
     <section class="hero-video-section">
+      <div class="video-loading-overlay" id="video-loading-overlay">
+        <div class="loading-spinner"></div>
+      </div>
       <video
         src="images/team.mp4"
         autoplay
         muted
         playsinline
         preload="auto"
-        poster="images/ellevating-logo-v1.png"
         id="hero-video"
       ></video>
     </section>
@@ -237,11 +239,52 @@
     <script src="js/main.js"></script>
     <script>
   const video = document.getElementById('hero-video');
+  const loadingOverlay = document.getElementById('video-loading-overlay');
+  
   if (video) {
+    // Hide video initially
+    video.style.opacity = '0';
+    
+    // Handle video loading
+    video.addEventListener('loadeddata', function() {
+      // Video has loaded enough data to start playing
+      video.classList.add('loaded');
+      video.style.opacity = '1';
+      
+      // Fade out loading overlay
+      if (loadingOverlay) {
+        loadingOverlay.classList.add('fade-out');
+        setTimeout(() => {
+          loadingOverlay.style.display = 'none';
+        }, 500);
+      }
+    });
+    
+    // Handle video play start
+    video.addEventListener('play', function() {
+      video.classList.add('loaded');
+      video.style.opacity = '1';
+    });
+    
+    // Handle video end (loop behavior)
     video.onended = function() {
       video.pause();
       video.currentTime = video.duration - 0.1;
     };
+    
+    // Fallback: if video takes too long to load, show it anyway
+    setTimeout(() => {
+      if (video.style.opacity === '0') {
+        video.classList.add('loaded');
+        video.style.opacity = '1';
+        if (loadingOverlay) {
+          loadingOverlay.classList.add('fade-out');
+          setTimeout(() => {
+            loadingOverlay.style.display = 'none';
+          }, 500);
+        }
+      }
+    }, 3000);
   }
 </script>
 </body>
